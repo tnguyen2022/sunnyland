@@ -1,0 +1,23 @@
+<div class="col-md-12 form" style="overflow: auto;">
+    <div>
+        {{ range sort .Site.Data.clients "weight" }}
+        <div class="col-md-4" style="overflow: hidden; height: 260px;">
+            <div class="inner" style="padding-bottom: 10px; padding-top: 10px;">
+                <div class="floatleft" style="padding-right: 20px; width: 200px;">
+                    <img src="../../{{ .image }}" alt="{{ .name }}" class="img-member" />
+                </div>
+                <div class="innerelem">
+                    <div class="bold">{{ .name }}</div>
+                    <div class="title">{{ .title }}</div>
+                    <div class="email">{{ .email }}</div>
+                </div>
+                <!--div class="floatleft" style="position: relative; display: block; max-width: 60%;">
+                    <br>
+                    <div class="desc">&emsp;&emsp;{{ .desc }}</div>
+                </div-->
+            </div>
+        </div>
+        {{ end }}
+    </div>
+    
+</div>

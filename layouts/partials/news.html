@@ -1,0 +1,39 @@
+<div class="col-md-12 form" style="overflow: auto;">
+    <br/>
+
+    <table id="publications" class="table-sorted">
+        <thead>
+            <tr>
+                <th class="authorstats"></th>
+                <th class="authorstats">Article</th>
+                <th class="authorstats">Date</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            {{ range sort .Site.Data.news "date" "desc" }}
+            <tr>
+                <td style="text-align: center;">
+                    <img src="../../img/{{ .img }}" class="img-member news-img"/>
+                </td>
+                <td class="publication news-text">
+                    <hr style="padding: 0px; margin-top: 0px;">
+
+                    {{ if .link }}
+                    <a href="{{ .link }}">
+                        <div class="bold">{{ .title }}</div>
+                    </a>
+                    {{ else }}
+                    <div class="bold">{{ .title }}</div>
+                    {{ end }}
+                    <span>{{ .desc }}</span>
+                </td>
+                <td class="publication">{{ .date }}</td>
+            </tr>
+            {{ end }}
+
+        </tbody>
+
+    </table>
+</div>

@@ -1,0 +1,111 @@
+<div class="navbar-affixed-top" data-spy="affix" data-offset-top="200">
+
+    <div class="navbar navbar-default yamm" role="navigation" id="navbar">
+
+        <div class="container">
+            <div class="navbar-header">
+                <div class="navbar-buttons">
+                        <div class="navbar-collapse collapse" id="navigation">
+                            <ul class="nav navbar-nav navbar-right">
+                            
+                                <li class="dropdown">
+                                    <a href="{{ .Site.BaseURL }}">Home</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="{{ .Site.BaseURL }}/pages/people">People</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="{{ .Site.BaseURL }}/pages/publications">Publications</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="{{ .Site.BaseURL }}/pages/news">News</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="{{ .Site.BaseURL }}/pages/contact">Contact</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="{{ .Site.BaseURL }}/pages/about">About</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="dropdown">
+                            <button id="menu-icon" type="button" onclick="myFunction()" class="dropbtn navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation">
+                                <div id="myDropdown" class="dropdown-content">
+                                    <a href="{{ .Site.BaseURL }}">Home</a>
+                                    <a href="{{ .Site.BaseURL }}/pages/people">People</a>
+                                    <a href="{{ .Site.BaseURL }}/pages/publications">Publications</a>
+                                    <a href="{{ .Site.BaseURL }}/pages/news">News</a>
+                                    <a href="{{ .Site.BaseURL }}/pages/contact">Contact</a>
+                                    <a href="{{ .Site.BaseURL }}/pages/about">About</a>
+                                </div>
+                            </button>
+                        </div>
+                </div>
+            </div>
+            <!--/.navbar-header -->
+
+            <!--div class="navbar-collapse collapse" id="navigation">
+                <ul class="nav navbar-nav navbar-right">
+                  {{ range .Site.Menus.main }}
+                  <li class="dropdown">
+                    {{ if .HasChildren }}
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ .Name }} <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      {{ range .Children }}
+                        <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                      {{ end }}
+                    </ul>
+                    {{ else }}
+                    <a href="{{ .URL }}">{{ .Name }}</a>
+                    {{ end  }}
+                  </li>
+                  {{ end }}
+                </ul>
+            </div-->
+            <!--/.nav-collapse -->
+
+            <div class="collapse clearfix" id="search">
+
+                <form class="navbar-form" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <span class="input-group-btn">
+
+                    <button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
+
+                </span>
+                    </div>
+                </form>
+
+            </div>
+            <!--/.nav-collapse -->
+
+        </div>
+    </div>
+    <!-- /#navbar -->
+
+</div>
+<script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+            }
+        }
+    }
+    </script>
+<!-- *** NAVBAR END ***-->

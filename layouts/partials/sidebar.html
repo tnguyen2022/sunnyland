@@ -1,0 +1,17 @@
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="{{ .Site.BaseURL }}"><h1>{{ .Site.Title }}</h1></a>
+    </div>
+
+    <ul class="sidebar-nav">
+      <li><a href="../people">People</a> </li>
+      <li><a href="../publications">Publications</a> </li>
+      <li><a href="../news">News</a> </li>
+      <li><a href="../contact">Contact</a> </li>
+      <li><a href="../about">About</a> </li>
+    </ul>
+
+    <p>{{ with .Site.Params.copyright }}{{.}}{{ else }}&copy; {{ now.Format "2006"}}. All rights reserved. {{end}}</p>
+  </div>
+</div>

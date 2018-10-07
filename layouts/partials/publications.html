@@ -1,0 +1,40 @@
+<div class="form col-md-12" id="blog-post" style="overflow: auto;">
+    <br/>
+
+    <table id="publications" class="table-sorted">
+        <thead>
+            <tr>
+                <th class="authorstats">Article</th>
+                <th class="authorstats lpcenter">Date</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            {{ range sort .Site.Data.publications "year" "desc" }}
+            <tr>
+                <td class="publication">
+                    <hr style="padding: 0px; margin-top: 0px;">
+                    <a href="{{ .url }}">
+                        <div class="bold">{{ .title }}</div>
+                    </a>
+                    <span>{{ .authors }}</span>
+                    <span>
+                        <div class="collapsed">
+                            <a href="javascript:void(0)">Show Abstract</a>
+                        </div>
+                        <span class="expanded"><br><br>{{ .description }}
+                            <a href="javascript:void(0)">Hide Abstract</a>
+                        </span>
+                    </span>
+                </td>
+                <td class="publication lpcenter">{{ .publication_date }}</td>
+            </tr>
+
+            {{ end }}
+
+        </tbody>
+
+    </table>
+</div>
+
