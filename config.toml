@@ -1,0 +1,63 @@
+baseURL = "https://web.northeastern.edu/sunnyland/"
+title = "SunnyLand"
+
+theme = "hugo-universal-theme"
+
+languageCode = "en-us"
+defaultContentLanguage = "en"
+
+pygmentsUseClassic = true
+pygmentsUseClasses = true
+pygmentsCodeFences = true
+
+newContentEditor = "nvim"
+
+[params]
+  description = "Professor Zhaohui Sunny Zhou's laboratory (a.k.a. Sunnyland) has an abiding interest in protein modifications, particularly their analysis and chemistry.  In the area of biomedical research, we research crosslinking, methylation, oxidation and asparagine deamidation and others involved in aging, neurological and autoimmune diseases."
+  description_long = "Professor Zhaohui Sunny Zhou's laboratory (a.k.a. Sunnyland) has an abiding interest in protein modifications, particularly their analysis and chemistry.  Built upon our expertise in enzymology, bioorganic and protein chemistry, we bring unique chemoenzymatic approaches that explore the distinct chemical reactivities and enzymatic specificities of modified amino acids, thereby enabling selective introduction of spectroscopic, affinity and mass tags.  Using these techniques in the area of protein pharmaceuticals, close collaborations with biotech/pharma companies have led to the elucidation of prduct and process-related modifications, many of which were previously unknown.  In the area of biomedical research, we research crosslinking, methylation, oxidation and asparagine deamidation and others involved in aging, neurological and autoimmune diseases."
+  author = "jfecher"
+  defaultKeywords = ["chemistry", "lab", "northeastern", "sunnyland", "sunnylanders"]
+  style = "red"
+  date_format = ""
+
+# Enable or disable top bar with social icons
+[params.topbar]
+    enable = false
+    text = """<p class="hidden-sm hidden-xs">Contact us on +420 777 555 333 or hello@universal.com.</p>
+      <p class="hidden-md hidden-lg"><a href="#" data-animate-hover="pulse"><i class="fa fa-phone"></i></a>
+      <a href="#" data-animate-hover="pulse"><i class="fa fa-envelope"></i></a>
+      </p>
+      """
+
+# Enable and disable widgets for the right sidebar
+[params.widgets]
+    categories = false
+    tags = false
+    search = false
+
+[params.carousel]
+    enable = true
+
+[params.features]
+    enable = false
+
+[params.testimonials]
+    enable = false
+
+[params.see_more]
+    enable = true
+    icon = "fa fa-envelope"
+    title = "See more"
+    subtitle = ""
+    link_url = "pages/contact"
+    link_text = "Contact Us"
+
+[params.clients]
+    enable = true
+    title = "Current Members"
+    subtitle = ""
+
+[params.recent_posts]
+    enable = false
+    title = "Recent Posts"
+    subtitle = "See more recent posts and publications"
