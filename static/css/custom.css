@@ -1,0 +1,273 @@
+
+#contact-information {
+    text-align: center;
+}
+
+#direction-for-walking-from-nearby-t-station {
+    text-align: center;
+}
+
+.directions {
+    padding-left: 20px;
+}
+
+.img-responsive {
+    height: 30rem;
+}
+
+#all {
+    min-height: 100%;
+    position: relative;
+    background-color: #eee;
+}
+
+.form {
+    background-color: #fff !important;
+}
+
+#nav-transparent > div > #navbar {
+    background-color: #333;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+}
+
+#footer {
+    position: absolute;
+    bottom: 128px;
+    width: 100%;
+}
+
+#copyright {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+#see_more {
+    padding: 100px 0 !important;
+}
+
+.form {
+    background-color: #eee;
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.industry-partner {
+    width: 75%;
+    height: 50%;
+}
+
+.testimonials .item {
+    padding-bottom: 0px;
+    text-align: center;
+}
+
+.img-member {
+    height: 17rem;
+}
+
+.customers .item img {
+    filter: none;
+    -webkit-filter: none;
+}
+
+.nopadding {
+    padding: 0px;
+}
+
+.nomargin {
+    margin: 0px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.floatleft {
+    float: left;
+}
+
+.innerelem {
+    float: left;
+    padding-right: 20px;
+    width: 20%;
+    min-width: 190px;
+}
+
+hr {
+    border-top-color: #cecece;
+}
+
+.col-sm-5 {
+    color: #111;
+}
+
+.sidebar-sticky {
+    max-width: 150%;
+    background-color: #eee;
+}
+
+.red-mask {
+    background: red;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.title-container {
+    z-index: 2;
+    position: relative;
+    background-color: rgba(53, 26, 26, 0.7);
+}
+
+.frontbg {
+    background: url('../img/chemistry.png') center;
+    margin: 0px;
+    padding: 50px;
+}
+
+.lead {
+    color: #dedede;
+}
+
+.navbar-default {
+    background-color: transparent;
+}
+
+.home-carousel > .dark-mask {
+    opacity: 0.83;
+    background-color: #292929;
+}
+
+.dark-text {
+    color: #000;
+}
+
+.col-sm-5 {
+    color: #ccc;
+}
+
+.bar {
+    padding: 30px 0 !important;
+}
+
+.bar.background-image-fixed-2.no-mb.color-white.text-center {
+    padding: 60px 0 !important;
+}
+
+.authorstats {
+    text-align: center;
+    padding-right: 30px;
+    padding-bottom: 8px;
+    white-space: nowrap;
+}
+
+.lpcenter {
+    padding-left: 30px;
+    text-align: center;
+}
+
+.publication {
+    padding-bottom: 20px;
+    min-height: 100px;
+}
+
+.news-img {
+    padding: 20px;
+    padding-left: 0px;
+    max-width: 200px;
+    max-height: 200px;
+    height: unset;
+}
+
+.news-text {
+    padding-right: 20px;
+    vertical-align: top;
+}
+
+/* table sorting arrows */
+th.header {
+    background-image: url(../img/arrow-both.gif);
+    background-repeat: no-repeat;
+    background-position: center right;
+    cursor: pointer;
+}
+
+.headerSortUp {
+    background-image: url(../img/asc.gif) !important;
+}
+
+.headerSortDown {
+    background-image: url(../img/desc.gif) !important;
+}
+
+
+.container .sidebar-sticky {
+    max-width: 100%;
+    overflow: auto;
+}
+
+.sidebar {
+    margin-bottom: 15px;
+}
+
+#content .container .row {
+    margin-left: -250px;
+    margin-right: -250px;
+}
+
+.col-md-12 h1 {
+    text-align: center;
+}
+
+.dropbtn {
+    
+    color: white;
+    padding: 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background: #4C8FEC url(../img/menu-icon.png) center;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+    background: #da4d4d url(../img/menu-icon.png) center;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    padding: 20px;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    right: 0px;
+    top: 40px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 10;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
