@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}" style="height: 100%;">
+
+  {{ partial "head.html" . }}
+
+  <body style="height: 100%;">
+
+    <div id="all">
+
+        <header id="nav-transparent">
+
+          {{ partial "nav.html" . }}
+
+        </header>
+
+        {{ partial "breadcrumbs.html" . }}
+
+        <div id="content">
+            <div class="container">
+
+                <div class="row">
+
+                    {{ if eq "News" .Name }}
+                        {{ partial "news.html" . }}
+                    {{ else if eq "Publications" .Name }}
+                        {{ partial "publications.html" . }}
+                    {{ else if eq "Contact" .Name }}
+                        {{ partial "contact.html" . }}
+                    {{ else if eq "People" .Name }}
+                        {{ partial "people.html" . }}
+                    {{ else }}
+                    <div id="post-content">
+                        <div class="col-md-12 form" id="blog-post">
+                            {{ .Content }}
+                        </div>
+                    </div>
+                    {{ end }}
+
+                    <!-- /#post-content -->
+                    {{ if .Site.DisqusShortname }}
+                    <div id="comments">
+                        {{ template "_internal/disqus.html" . }}
+                    </div>
+                    {{ end }}
+                    <!-- /#blog-post -->
+
+                </div>
+                <!-- /.row -->
+
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /#content -->
+
+        <div id="spacer" style="height: 229px;"/>
+
+        {{ partial "footer.html" . }}
+
+    </div>
+    <!-- /#all -->
+
+    {{ partial "scripts.html" . }}
+
+  </body>
+</html>
