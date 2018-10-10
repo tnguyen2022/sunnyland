@@ -234,11 +234,11 @@ th.header {
     font-size: 16px;
     border: none;
     cursor: pointer;
-    background: #4C8FEC url(../img/menu-icon.png) center;
+    background: #324661bf url(../img/menu-icon.png) center;
 }
 
 .dropbtn:hover, .dropbtn:focus {
-    background-color: #2980B9;
+    background-color: #324661bf;
     background: #da4d4d url(../img/menu-icon.png) center;
 }
 
